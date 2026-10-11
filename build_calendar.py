@@ -320,14 +320,13 @@ def build_ics(events: list[Event], generated_at: datetime | None = None) -> str:
 
 def normalize_feed_timestamps(content: str) -> str:
     """Compare calendar data while ignoring generation-only timestamps and newline style."""
-    normalized = content.replace("\\r\\n", "\\n").replace("\\r", "\\n")
+    normalized = content.replace("\r\n", "\n").replace("\r", "\n")
     return re.sub(
-        r"^(DTSTAMP|LAST-MODIFIED):\\d{8}T\\d{6}Z$",
-        r"\\1:TIMESTAMP",
+        r"^(DTSTAMP|LAST-MODIFIED):\d{8}T\d{6}Z$",
+        r"\1:TIMESTAMP",
         normalized,
         flags=re.MULTILINE,
     )
-
 
 def main() -> int:
     try:
