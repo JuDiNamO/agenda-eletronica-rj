@@ -37,6 +37,9 @@ jobs:
       - name: Testes automatizados e validação iCalendar
         run: python -m pytest -q
 
+      - name: Análise estática (Ruff)
+        run: python -m ruff check build_calendar.py tests
+
       - name: Registrar atualização no repositório
         run: |
           git config user.name "github-actions[bot]"
