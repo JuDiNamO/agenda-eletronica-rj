@@ -70,7 +70,7 @@ def test_parse_anchor_ignores_non_ticket_links(url):
 
 
 def test_ics_escape_handles_special_characters_and_line_breaks():
-    escaped = bc.ics_escape("Festa, edição; verão\\noite")
+    escaped = bc.ics_escape("Festa, edição; verão\noite")
     assert escaped == r"Festa\, edição\; verão\nnoite"
 
 
@@ -81,7 +81,7 @@ def test_folded_lines_follow_ical_octet_limit_and_unfold_losslessly():
     assert len(physical_lines) > 1
     assert all(len(line.encode("utf-8")) <= 75 for line in physical_lines)
     assert all(line.startswith(" ") for line in physical_lines[1:])
-    assert "".join(line.lstrip(" ") if i else line for i, line in enumerate(physical_lines)) == source
+    assert "".join(line[1:] if i else line for i, line in enumerate(physical_lines)) == source
 
 
 def test_build_ics_is_parseable_and_preserves_local_time_and_ticket_link():
@@ -99,7 +99,7 @@ def test_build_ics_is_parseable_and_preserves_local_time_and_ticket_link():
     events = parsed.walk("VEVENT")
     assert len(events) == 1
     vevent = events[0]
-    assert str(vevent.decoded("summary"), "utf-8") if isinstance(vevent.decoded("summary"), bytes) else str(vevent.decoded("summary")) == event.title
+    assert str(vevent.decoded("summary")) == event.title
     assert vevent.decoded("dtstart") == datetime(2026, 10, 17, 2, 30, tzinfo=timezone.utc)
     assert str(vevent.decoded("location")) == event.location
     assert str(vevent.get("url")) == event.ticket_url
