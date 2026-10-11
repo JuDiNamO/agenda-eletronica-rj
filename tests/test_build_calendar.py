@@ -102,7 +102,8 @@ def test_build_ics_is_parseable_and_preserves_local_time_and_ticket_link():
     summary = vevent.decoded("summary")
     assert (summary.decode("utf-8") if isinstance(summary, bytes) else str(summary)) == event.title
     assert vevent.decoded("dtstart") == datetime(2026, 10, 17, 2, 30, tzinfo=timezone.utc)
-    assert str(vevent.decoded("location")) == event.location
+    location = vevent.decoded("location")
+    assert (location.decode("utf-8") if isinstance(location, bytes) else str(location)) == event.location
     assert str(vevent.get("url")) == event.ticket_url
     assert event.ticket_url in str(vevent.decoded("description"))
 
