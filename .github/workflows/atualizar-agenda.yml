@@ -1,4 +1,0 @@
-name: Atualizar calendário da Agenda Eletrônica RJ
-
-on:
-  workflow_dispatch:
