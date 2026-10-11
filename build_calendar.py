@@ -39,6 +39,10 @@ DATETIME_SUFFIX = re.compile(
     re.IGNORECASE,
 )
 CITY_SUFFIX = re.compile(r"\s*\|\s*(?P<city>[^|]+?-RJ)\s*$", re.IGNORECASE)
+KNOWN_VENUES = [
+    "Museu do Amanhã", "Silk Beach Club", "Privilège Búzios",
+    "D-EDGE Rio", "Trauma", "Crema Club", "Privilège",
+]
 
 
 @dataclass(frozen=True)
@@ -79,8 +83,9 @@ def is_time_or_location_piece(value: str) -> bool:
 
 
 def split_repeated_venue(core: str) -> tuple[str, str]:
-    """Split repeated trailing venue labels, e.g. 'Evento D-EDGE Rio D-EDGE Rio'."""
+    """Split duplicated venue labels or a recognized venue at the end of a listing."""
     words = core.split()
+    # Listings often repeat the venue after the event title. Prefer that exact pattern.
     for width in range(min(len(words) // 2, 6), 0, -1):
         suffix = " ".join(words[-width:])
         prefix = " ".join(words[:-width]).rstrip(" -–—|:")
@@ -88,6 +93,12 @@ def split_repeated_venue(core: str) -> tuple[str, str]:
             title = prefix.rstrip(" -–—|:")
             if title:
                 return title, suffix
+    # Some entries append the venue only once, without a separator.
+    for venue in sorted(KNOWN_VENUES, key=len, reverse=True):
+        if core.casefold().endswith((" " + venue).casefold()):
+            title = core[:-len(venue)].rstrip(" -–—|:")
+            if title:
+                return title, venue
     return core.strip(), ""
 
 
