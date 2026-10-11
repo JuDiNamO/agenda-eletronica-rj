@@ -366,7 +366,7 @@ def main() -> int:
                 write_feed_atomically(content)
                 print(f"Feed atualizado: {len(events)} eventos futuros -> {OUTPUT_PATH.name}")
         else:
-            OUTPUT_PATH.write_text(content, encoding="utf-8", newline="")
+            write_feed_atomically(content)
             print(f"Feed criado: {len(events)} eventos futuros -> {OUTPUT_PATH.name}")
         for event in events:
             print(f"- {event.event_date.isoformat()} {event.hour:02d}:{event.minute:02d} | {event.title} | {event.location}")
