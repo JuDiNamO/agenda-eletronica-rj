@@ -24,7 +24,7 @@ jobs:
     timeout-minutes: 10
     environment:
       name: github-pages
-      url: \${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
@@ -54,6 +54,8 @@ jobs:
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Preparar arquivos públicos
         run: |
