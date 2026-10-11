@@ -30,7 +30,7 @@ MONTHS = {
 DATE_HEADING = re.compile(
     r"(?:segunda|terça|terca|quarta|quinta|sexta|sábado|sabado|domingo)(?:-feira)?\s*,?\s*"
     r"(?P<day>\d{1,2})\s+de\s+(?P<month>[a-zçãéêô]+)\s+de\s+(?P<year>\d{4})",
-    re.IGNORECASEGNORECASE,
+    re.IGNORECASE,
 )
 TIME_SUFFIX = re.compile(r"\bàs\s*(?P<hour>\d{1,2})h(?P<minute>\d{2})?\s*$", re.IGNORECASE)
 DATETIME_SUFFIX = re.compile(
