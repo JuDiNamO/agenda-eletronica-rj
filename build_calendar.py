@@ -298,7 +298,7 @@ def build_ics(events: list[Event], generated_at: datetime | None = None) -> str:
             event.event_date.year, event.event_date.month, event.event_date.day,
             event.hour, event.minute, tzinfo=TZ,
         )
-        utc_start = local_start.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        utc_start = local_start.astimezone(UTC).strftime("%Y%m%dT%H%M%SZ")
         digest = hashlib.sha256((event.ticket_url.rstrip("/") + event.event_date.isoformat()).encode("utf-8")).hexdigest()[:24]
         description = f"Compra de ingressos: {event.ticket_url}\nAgenda de origem: {SOURCE_URL}"
         lines.extend([
