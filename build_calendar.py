@@ -308,12 +308,30 @@ def build_ics(events: list[Event], generated_at: datetime | None = None) -> str:
     return "\r\n".join(fold_ics_line(line) for line in lines) + "\r\n"
 
 
+def normalize_feed_timestamps(content: str) -> str:
+    """Compare calendar data while ignoring generation-only timestamps."""
+    return re.sub(
+        r"^(DTSTAMP|LAST-MODIFIED):\\d{8}T\\d{6}Z$",
+        r"\\1:TIMESTAMP",
+        content,
+        flags=re.MULTILINE,
+    )
+
+
 def main() -> int:
     try:
         events = scrape_events()
         content = build_ics(events)
-        OUTPUT_PATH.write_text(content, encoding="utf-8", newline="")
-        print(f"Feed atualizado: {len(events)} eventos futuros -> {OUTPUT_PATH.name}")
+        if OUTPUT_PATH.exists():
+            existing = OUTPUT_PATH.read_text(encoding="utf-8", errors="replace")
+            if normalize_feed_timestamps(existing) == normalize_feed_timestamps(content):
+                print("Os eventos não mudaram; preservando o feed atual sem alterar os timestamps.")
+            else:
+                OUTPUT_PATH.write_text(content, encoding="utf-8", newline="")
+                print(f"Feed atualizado: {len(events)} eventos futuros -> {OUTPUT_PATH.name}")
+        else:
+            OUTPUT_PATH.write_text(content, encoding="utf-8", newline="")
+            print(f"Feed criado: {len(events)} eventos futuros -> {OUTPUT_PATH.name}")
         for event in events:
             print(f"- {event.event_date.isoformat()} {event.hour:02d}:{event.minute:02d} | {event.title} | {event.location}")
         return 0
