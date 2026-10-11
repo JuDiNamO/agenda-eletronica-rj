@@ -149,15 +149,25 @@ def test_checked_in_feed_is_valid_and_has_unique_events():
     assert raw.startswith(b"BEGIN:VCALENDAR\r\n")
     assert raw.endswith(b"END:VCALENDAR\r\n")
     assert not re.search(rb"[\t ]+$", raw, re.MULTILINE)
+    # RFC 5545 recommends folding at 75 octets, not 75 Unicode characters.
+    assert all(len(line) <= 75 for line in raw.split(b"\r\n") if line)
     parsed = Calendar.from_ical(raw)
     events = parsed.walk("VEVENT")
     assert len(events) > 0
     uids = [str(event.get("UID")) for event in events]
     assert len(uids) == len(set(uids))
     for event in events:
+        assert not getattr(event, "errors", []), f"Malformed iCalendar properties: {event.errors}"
+        assert event.get("UID")
+        assert event.get("DTSTAMP")
         assert event.get("SUMMARY")
         assert event.get("DTSTART")
+        start = event.decoded("DTSTART")
+        assert isinstance(start, datetime)
+        assert start.tzinfo is not None
         url = str(event.get("URL"))
         assert url.startswith("https://")
-        description = str(event.decoded("DESCRIPTION"))
-        assert url in description
+        description = event.decoded("DESCRIPTION")
+        if isinstance(description, bytes):
+            description = description.decode("utf-8")
+        assert url in str(description)
