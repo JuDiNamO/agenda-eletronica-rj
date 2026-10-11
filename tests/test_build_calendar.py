@@ -22,7 +22,7 @@ def test_parse_portuguese_date_heading():
 def test_parse_anchor_reads_title_venue_time_and_ticket_url():
     soup = BeautifulSoup(
         '<a href="https://www.ingresse.com/uma-festa/">'
-        '<span>Festa de Teste</span><span>Casa XYZ</span><span>às 23h30</span>'
+        '<span>Festa de Teste</span><span>Casa XYZ</span> | Rio de Janeiro-RJ <span>às 23h30</span>'
         '</a>',
         "html.parser",
     )
@@ -36,7 +36,7 @@ def test_parse_anchor_reads_title_venue_time_and_ticket_url():
 
 def test_parse_anchor_splits_known_venue_from_plain_text():
     soup = BeautifulSoup(
-        '<a href="https://www.ingresse.com/festa/">Festa eletrônica D-EDGE Rio às 23h</a>',
+        '<a href="https://www.ingresse.com/festa/">Festa eletrônica D-EDGE Rio | Rio de Janeiro-RJ às 23h</a>',
         "html.parser",
     )
     event = bc.parse_anchor(soup.a, date(2026, 10, 16))
@@ -70,7 +70,7 @@ def test_parse_anchor_ignores_non_ticket_links(url):
 
 
 def test_ics_escape_handles_special_characters_and_line_breaks():
-    escaped = bc.ics_escape("Festa, edição; verão\noite")
+    escaped = bc.ics_escape("Festa, edição; verão\nnoite")
     assert escaped == r"Festa\, edição\; verão\nnoite"
 
 
@@ -99,7 +99,8 @@ def test_build_ics_is_parseable_and_preserves_local_time_and_ticket_link():
     events = parsed.walk("VEVENT")
     assert len(events) == 1
     vevent = events[0]
-    assert str(vevent.decoded("summary")) == event.title
+    summary = vevent.decoded("summary")
+    assert (summary.decode("utf-8") if isinstance(summary, bytes) else str(summary)) == event.title
     assert vevent.decoded("dtstart") == datetime(2026, 10, 17, 2, 30, tzinfo=timezone.utc)
     assert str(vevent.decoded("location")) == event.location
     assert str(vevent.get("url")) == event.ticket_url
