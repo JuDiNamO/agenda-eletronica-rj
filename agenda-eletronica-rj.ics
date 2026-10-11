@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Eletronica//Calendario RJ//PT-BR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agenda Eletrônica RJ — festas e ingressos
+X-WR-TIMEZONE:America/Sao_Paulo
+BEGIN:VEVENT
+UID:fd2c1beac773273914dadd71@agendaeletronica-rj
+DTSTAMP:20261011T201344Z
+LAST-MODIFIED:20261011T201344Z
+DTSTART:20261012T000000Z
+SUMMARY:Rio Parade 2026 Museu do Amanhã
+LOCATION:Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/rio-parade/\nAgen
+ da de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/rio-parade/
+END:VEVENT
+BEGIN:VEVENT
+UID:4f956c03489df9e104d064f4@agendaeletronica-rj
+DTSTAMP:20261011T201344Z
+LAST-MODIFIED:20261011T201344Z
+DTSTART:20261017T020000Z
+SUMMARY:Victor Lou — D-EDGE Rio
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-aprese
+ nta-victor-lou/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-apresenta-victor-lou/
+END:VEVENT
+BEGIN:VEVENT
+UID:1ba03cd62e85e5c0b73dd26b@agendaeletronica-rj
+DTSTAMP:20261011T201344Z
+LAST-MODIFIED:20261011T201344Z
+DTSTART:20261018T020000Z
+SUMMARY:Fusca Clássicos com Jayboo — XCRUN Privilège Búzios
+LOCATION:Privilège Búzios\, Armação dos Búzios-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/fusca-no-privileg
+ e-buzios-17-10/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/fusca-no-privilege-buzios-17-10/
+END:VEVENT
+BEGIN:VEVENT
+UID:c3ccf576e98a3cc4aa83e234@agendaeletronica-rj
+DTSTAMP:20261011T201344Z
+LAST-MODIFIED:20261011T201344Z
+DTSTART:20261101T010000Z
+SUMMARY:Real Distribuição | Magal e Mystery Friend Trauma
+LOCATION:Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://shotgun.live/pt-br/events/real-dis
+ tribuicao-com-magal-e-mystery-friend\nAgenda de origem: https://agendaelet
+ ronica.com.br/rj/
+URL:https://shotgun.live/pt-br/events/real-distribuicao-com-magal-e-mystery
+ -friend
+END:VEVENT
+BEGIN:VEVENT
+UID:663f5bde7dbd0bf5b69c0f47@agendaeletronica-rj
+DTSTAMP:20261011T201344Z
+LAST-MODIFIED:20261011T201344Z
+DTSTART:20261227T020000Z
+SUMMARY:Semana de Réveillon Privilège 2027 Privilège Búzios
+LOCATION:Armação dos Búzios-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/semana-reveillon-
+ privilege-2027/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/semana-reveillon-privilege-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ab9de6bba5ef0165f8677d0e@agendaeletronica-rj
+DTSTAMP:20261011T201344Z
+LAST-MODIFIED:20261011T201344Z
+DTSTART:20261230T020000Z
+SUMMARY:Semana de Réveillon Silk Búzios 2027 — Aurora Silk Beach Club
+LOCATION:Armação dos Búzios-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
+ rora-2027/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
+END:VEVENT
+END:VCALENDAR
