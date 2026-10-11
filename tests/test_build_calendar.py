@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import re
-from datetime import date, datetime, timezone
+from datetime import UTC, date, datetime
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -93,7 +93,7 @@ def test_build_ics_is_parseable_and_preserves_local_time_and_ticket_link():
         location="Casa XYZ, Rio de Janeiro-RJ",
         ticket_url="https://www.ingresse.com/festa-teste/",
     )
-    timestamp = datetime(2026, 10, 11, 12, 0, tzinfo=timezone.utc)
+    timestamp = datetime(2026, 10, 11, 12, 0, tzinfo=UTC)
     raw = bc.build_ics([event], generated_at=timestamp)
     parsed = Calendar.from_ical(raw)
     events = parsed.walk("VEVENT")
@@ -101,7 +101,7 @@ def test_build_ics_is_parseable_and_preserves_local_time_and_ticket_link():
     vevent = events[0]
     summary = vevent.decoded("summary")
     assert (summary.decode("utf-8") if isinstance(summary, bytes) else str(summary)) == event.title
-    assert vevent.decoded("dtstart") == datetime(2026, 10, 17, 2, 30, tzinfo=timezone.utc)
+    assert vevent.decoded("dtstart") == datetime(2026, 10, 17, 2, 30, tzinfo=UTC)
     location = vevent.decoded("location")
     assert (location.decode("utf-8") if isinstance(location, bytes) else str(location)) == event.location
     assert str(vevent.get("url")) == event.ticket_url
@@ -110,8 +110,8 @@ def test_build_ics_is_parseable_and_preserves_local_time_and_ticket_link():
 
 def test_uid_is_stable_when_only_generation_timestamp_changes():
     event = bc.Event("Festa", date(2026, 10, 16), 23, 0, "Casa", "https://ingresse.com/festa")
-    raw_a = bc.build_ics([event], datetime(2026, 10, 11, 10, 0, tzinfo=timezone.utc))
-    raw_b = bc.build_ics([event], datetime(2026, 10, 12, 10, 0, tzinfo=timezone.utc))
+    raw_a = bc.build_ics([event], datetime(2026, 10, 11, 10, 0, tzinfo=UTC))
+    raw_b = bc.build_ics([event], datetime(2026, 10, 12, 10, 0, tzinfo=UTC))
     cal_a = Calendar.from_ical(raw_a).walk("VEVENT")[0]
     cal_b = Calendar.from_ical(raw_b).walk("VEVENT")[0]
     assert str(cal_a["UID"]) == str(cal_b["UID"])
@@ -119,8 +119,8 @@ def test_uid_is_stable_when_only_generation_timestamp_changes():
 
 def test_timestamp_normalizer_ignores_only_timestamps_and_newline_format():
     event = bc.Event("Festa", date(2026, 10, 16), 23, 0, "Casa", "https://ingresse.com/festa")
-    raw_a = bc.build_ics([event], datetime(2026, 10, 11, 10, 0, tzinfo=timezone.utc))
-    raw_b = bc.build_ics([event], datetime(2026, 10, 12, 10, 0, tzinfo=timezone.utc)).replace("\r\n", "\n")
+    raw_a = bc.build_ics([event], datetime(2026, 10, 11, 10, 0, tzinfo=UTC))
+    raw_b = bc.build_ics([event], datetime(2026, 10, 12, 10, 0, tzinfo=UTC)).replace("\r\n", "\n")
     assert bc.normalize_feed_timestamps(raw_a) == bc.normalize_feed_timestamps(raw_b)
     changed = raw_b.replace("SUMMARY:Festa", "SUMMARY:Festa nova")
     assert bc.normalize_feed_timestamps(raw_a) != bc.normalize_feed_timestamps(changed)
@@ -148,7 +148,7 @@ def test_checked_in_feed_is_valid_and_has_unique_events():
     raw = feed_path.read_bytes()
     assert raw.startswith(b"BEGIN:VCALENDAR\r\n")
     assert raw.endswith(b"END:VCALENDAR\r\n")
-    assert not re.search(rb"[\t ]+$", raw, re.M)
+    assert not re.search(rb"[\t ]+$", raw, re.MULTILINE)
     parsed = Calendar.from_ical(raw)
     events = parsed.walk("VEVENT")
     assert len(events) > 0
