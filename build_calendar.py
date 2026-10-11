@@ -128,7 +128,8 @@ def parse_anchor(anchor: Tag, event_date: date) -> Event | None:
     if hour > 23 or minute > 59:
         return None
 
-    core_with_city = DATETIME_SUFFIX.sub("", visible).strip()
+    core_with_city = DATETIME_SUFFIX.sub("", visible)
+    core_with_city = TIME_SUFFIX.sub("", core_with_city).strip()
     city_match = CITY_SUFFIX.search(core_with_city)
     city = clean_text(city_match.group("city")) if city_match else ""
     core = CITY_SUFFIX.sub("", core_with_city).strip() if city_match else core_with_city
@@ -190,8 +191,14 @@ def read_existing_feed_context() -> dict[str, tuple[str, str]]:
     return context
 
 
-def scrape_events(now: date | None = None) -> list[Event]:
-    today = now or datetime.now(TZ).date()
+def scrape_events(now: datetime | date | None = None) -> list[Event]:
+    # Accept an explicit datetime for exact filtering; date-only inputs mean local midnight.
+    if now is None:
+        reference_time = datetime.now(TZ)
+    elif isinstance(now, datetime):
+        reference_time = now.astimezone(TZ) if now.tzinfo else now.replace(tzinfo=TZ)
+    else:
+        reference_time = datetime.combine(now, datetime.min.time(), tzinfo=TZ)
     existing_context = read_existing_feed_context()
     response = requests.get(
         SOURCE_URL,
@@ -220,7 +227,10 @@ def scrape_events(now: date | None = None) -> list[Event]:
         if active_date is None or not isinstance(node, Tag):
             continue
         event = parse_anchor(node, active_date)
-        if event and event.event_date >= today:
+        if event and datetime(
+            event.event_date.year, event.event_date.month, event.event_date.day,
+            event.hour, event.minute, tzinfo=TZ,
+        ) >= reference_time:
             cached = existing_context.get(event.ticket_url.rstrip("/"))
             if cached:
                 city_only = "," not in event.location
@@ -309,11 +319,12 @@ def build_ics(events: list[Event], generated_at: datetime | None = None) -> str:
 
 
 def normalize_feed_timestamps(content: str) -> str:
-    """Compare calendar data while ignoring generation-only timestamps."""
+    """Compare calendar data while ignoring generation-only timestamps and newline style."""
+    normalized = content.replace("\\r\\n", "\\n").replace("\\r", "\\n")
     return re.sub(
         r"^(DTSTAMP|LAST-MODIFIED):\\d{8}T\\d{6}Z$",
         r"\\1:TIMESTAMP",
-        content,
+        normalized,
         flags=re.MULTILINE,
     )
 
