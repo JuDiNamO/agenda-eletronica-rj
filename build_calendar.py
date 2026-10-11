@@ -7,8 +7,10 @@ from __future__ import annotations
 
 import hashlib
 import html
+import os
 import re
 import sys
+import tempfile
 from dataclasses import dataclass
 from datetime import UTC, date, datetime
 from pathlib import Path
@@ -317,6 +319,31 @@ def build_ics(events: list[Event], generated_at: datetime | None = None) -> str:
     return "\r\n".join(fold_ics_line(line) for line in lines) + "\r\n"
 
 
+def write_feed_atomically(content: str, output_path: Path | None = None) -> None:
+    """Replace the public feed atomically so readers never see a partial file."""
+    target = output_path or OUTPUT_PATH
+    target.parent.mkdir(parents=True, exist_ok=True)
+    temp_path: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            newline="",
+            dir=target.parent,
+            prefix=f".{target.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as temp_file:
+            temp_path = Path(temp_file.name)
+            temp_file.write(content)
+            temp_file.flush()
+            os.fsync(temp_file.fileno())
+        os.replace(temp_path, target)
+    finally:
+        if temp_path is not None:
+            temp_path.unlink(missing_ok=True)
+
+
 def normalize_feed_timestamps(content: str) -> str:
     """Compare calendar data while ignoring generation-only timestamps and newline style."""
     normalized = content.replace("\r\n", "\n").replace("\r", "\n")
@@ -336,7 +363,7 @@ def main() -> int:
             if normalize_feed_timestamps(existing) == normalize_feed_timestamps(content):
                 print("Os eventos não mudaram; preservando o feed atual sem alterar os timestamps.")
             else:
-                OUTPUT_PATH.write_text(content, encoding="utf-8", newline="")
+                write_feed_atomically(content)
                 print(f"Feed atualizado: {len(events)} eventos futuros -> {OUTPUT_PATH.name}")
         else:
             OUTPUT_PATH.write_text(content, encoding="utf-8", newline="")
