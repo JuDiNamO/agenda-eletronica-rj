@@ -143,6 +143,28 @@ def test_scraper_excludes_events_that_already_started_today(monkeypatch, tmp_pat
     assert [event.title for event in events] == ["Festa futura"]
 
 
+def test_atomic_writer_replaces_feed_without_leaving_temporary_files(tmp_path):
+    target = tmp_path / "agenda-eletronica-rj.ics"
+    target.write_text("versão antiga", encoding="utf-8")
+    bc.write_feed_atomically("versão nova", target)
+    assert target.read_text(encoding="utf-8") == "versão nova"
+    assert list(tmp_path.iterdir()) == [target]
+
+
+def test_main_preserves_previous_feed_when_source_update_fails(monkeypatch, tmp_path, capsys):
+    target = tmp_path / "agenda-eletronica-rj.ics"
+    target.write_text("feed anterior válido", encoding="utf-8")
+    monkeypatch.setattr(bc, "OUTPUT_PATH", target)
+
+    def fail_scrape():
+        raise RuntimeError("fonte temporariamente indisponível")
+
+    monkeypatch.setattr(bc, "scrape_events", fail_scrape)
+    assert bc.main() == 1
+    assert target.read_text(encoding="utf-8") == "feed anterior válido"
+    assert "fonte temporariamente indisponível" in capsys.readouterr().err
+
+
 def test_checked_in_feed_is_valid_and_has_unique_events():
     feed_path = Path(__file__).resolve().parents[1] / "agenda-eletronica-rj.ics"
     raw = feed_path.read_bytes()
