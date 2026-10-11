@@ -76,8 +76,8 @@ def is_time_or_location_piece(value: str) -> bool:
     return (
         not value or value in {"|", "—", "–", "-"}
         or bool(TIME_SUFFIX.search(value))
-        or bool(re.search(r"\b\d{1,2}\s+de\s+[a-zçãéêô]+\s+às\s+\d{1,2}h", value, re.I))
-        or bool(re.search(r"(?:RJ|Rio de Janeiro)\s*$", value, re.I))
+        or bool(re.search(r"\b\d{1,2}\s+de\s+[a-zçãéêô]+\s+às\s+\d{1,2}h", value, re.IGNORECASE))
+        or bool(re.search(r"(?:RJ|Rio de Janeiro)\s*$", value, re.IGNORECASE))
     )
 
 
@@ -180,8 +180,8 @@ def read_existing_feed_context() -> dict[str, tuple[str, str]]:
     context: dict[str, tuple[str, str]] = {}
     for block in raw.split("BEGIN:VEVENT")[1:]:
         url_match = re.search(r"^URL:(.+)$", block, re.MULTILINE)
-        title_match = re.search(r"^SUMMARY:(.+)$", block, re.M)
-        location_match = re.search(r"^LOCATION:(.+)$", block, re.M)
+        title_match = re.search(r"^SUMMARY:(.+)$", block, re.MULTILINE)
+        location_match = re.search(r"^LOCATION:(.+)$", block, re.MULTILINE)
         if url_match and title_match and location_match:
             url = url_match.group(1).strip().rstrip("/")
             title = unescape_ics_text(title_match.group(1).strip())
@@ -220,7 +220,7 @@ def scrape_events(now: datetime | date | None = None) -> list[Event]:
             parsed_date = parse_heading_date(heading_text)
             if parsed_date:
                 active_date = parsed_date
-            elif re.search(r"festas eletrônicas por estado|festas eletr[oô]nicas por estado", heading_text, re.I):
+            elif re.search(r"festas eletrônicas por estado|festas eletr[oô]nicas por estado", heading_text, re.IGNORECASE):
                 active_date = None
             continue
         if active_date is None or not isinstance(node, Tag):
