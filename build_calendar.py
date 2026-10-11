@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Build a subscribable iCalendar feed from Agenda Eletrônica RJ.
 
 The script runs in GitHub Actions and fails rather than publishing an empty feed
@@ -11,10 +10,10 @@ import html
 import re
 import sys
 from dataclasses import dataclass
-from datetime import date, datetime, timezone
+from datetime import UTC, date, datetime
 from pathlib import Path
-from zoneinfo import ZoneInfo
 from urllib.parse import urljoin, urlparse
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup, Tag
@@ -31,7 +30,7 @@ MONTHS = {
 DATE_HEADING = re.compile(
     r"(?:segunda|terça|terca|quarta|quinta|sexta|sábado|sabado|domingo)(?:-feira)?\s*,?\s*"
     r"(?P<day>\d{1,2})\s+de\s+(?P<month>[a-zçãéêô]+)\s+de\s+(?P<year>\d{4})",
-    re.IGNORECASE,
+    re.IGNORECASEGNORECASE,
 )
 TIME_SUFFIX = re.compile(r"\bàs\s*(?P<hour>\d{1,2})h(?P<minute>\d{2})?\s*$", re.IGNORECASE)
 DATETIME_SUFFIX = re.compile(
@@ -108,7 +107,7 @@ def parse_anchor(anchor: Tag, event_date: date) -> Event | None:
         return None
     absolute_url = urljoin(SOURCE_URL, href)
     host = (urlparse(absolute_url).hostname or "").lower()
-    if not host or host.endswith("agendaeletronica.com.br") or host.endswith("facebook.com"):
+    if not host or host.endswith(("agendaeletronica.com.br", "facebook.com")):
         return None
 
     visible = clean_text(anchor.get_text(" ", strip=True))
@@ -180,7 +179,7 @@ def read_existing_feed_context() -> dict[str, tuple[str, str]]:
     raw = re.sub(r"\r?\n[ \t]", "", raw)
     context: dict[str, tuple[str, str]] = {}
     for block in raw.split("BEGIN:VEVENT")[1:]:
-        url_match = re.search(r"^URL:(.+)$", block, re.M)
+        url_match = re.search(r"^URL:(.+)$", block, re.MULTILINE)
         title_match = re.search(r"^SUMMARY:(.+)$", block, re.M)
         location_match = re.search(r"^LOCATION:(.+)$", block, re.M)
         if url_match and title_match and location_match:
@@ -284,7 +283,7 @@ def fold_ics_line(line: str, limit: int = 75) -> str:
 
 
 def build_ics(events: list[Event], generated_at: datetime | None = None) -> str:
-    stamp = (generated_at or datetime.now(timezone.utc)).astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    stamp = (generated_at or datetime.now(UTC)).astimezone(UTC).strftime("%Y%m%dT%H%M%SZ")
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -345,7 +344,7 @@ def main() -> int:
         for event in events:
             print(f"- {event.event_date.isoformat()} {event.hour:02d}:{event.minute:02d} | {event.title} | {event.location}")
         return 0
-    except Exception as exc:
+    except (requests.RequestException, OSError, ValueError, RuntimeError, TypeError) as exc:
         print(f"ERRO: {exc}", file=sys.stderr)
         return 1
 
