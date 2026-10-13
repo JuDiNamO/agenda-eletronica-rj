@@ -649,7 +649,8 @@ def main() -> int:
         fresh_content = build_ics(events)
         content = fresh_content
         if OUTPUT_PATH.exists():
-            existing = OUTPUT_PATH.read_text(encoding="utf-8", errors="replace")
+            # Preserve CRLF bytes from existing VEVENT blocks when merging.
+            existing = OUTPUT_PATH.read_bytes().decode("utf-8", errors="replace")
             content = merge_feed_preserving_existing(existing, fresh_content)
             if normalize_feed_timestamps(existing) == normalize_feed_timestamps(content):
                 print("Os eventos não mudaram; preservando o feed atual sem alterar os timestamps.")
