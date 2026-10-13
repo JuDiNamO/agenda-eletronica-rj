@@ -138,6 +138,7 @@ def test_scraper_excludes_events_that_already_started_today(monkeypatch, tmp_pat
     """
     response = SimpleNamespace(text=html, raise_for_status=lambda: None)
     monkeypatch.setattr(bc.requests, "get", lambda *args, **kwargs: response)
+    monkeypatch.setattr(bc, "scrape_melhores_festas", lambda reference_time: [])
     now = datetime(2026, 10, 11, 17, 0, tzinfo=bc.TZ)
     events = bc.scrape_events(now=now)
     assert [event.title for event in events] == ["Festa futura"]
@@ -193,3 +194,92 @@ def test_checked_in_feed_is_valid_and_has_unique_events():
         if isinstance(description, bytes):
             description = description.decode("utf-8")
         assert url in str(description)
+
+
+def test_parse_secondary_date_and_time_with_portuguese_month_abbreviations():
+    assert bc.parse_secondary_date_time("16 Out 2026 às 23:00") == (date(2026, 10, 16), 23, 0)
+    assert bc.parse_secondary_date_time("05 Fev 2027 às 22h") == (date(2027, 2, 5), 22, 0)
+    assert bc.parse_secondary_date_time("32 Out 2026 às 23:00") is None
+    assert bc.parse_secondary_date_time("16 Out 2026 sem horário") is None
+
+
+def test_secondary_scraper_extracts_rj_events_and_excludes_other_states(monkeypatch):
+    html = """
+    <html><body>
+      <article class="event-card">
+        <p class="event-date">16 Out 2026 às 23:00</p>
+        <h2><a href="/eventos/victor-lou-na-d-edge/">Victor Lou na D-Edge</a></h2>
+        <p class="event-location">D-Edge Rio, Rio de Janeiro</p>
+      </article>
+      <article class="event-card">
+        <p class="event-date">17 Out 2026 às 14:00</p>
+        <h2><a href="/eventos/keinemusik-sp/">Keinemusik São Paulo</a></h2>
+        <p class="event-location">São Paulo</p>
+      </article>
+    </body></html>
+    """ + ("conteúdo extra " * 100)
+    response = SimpleNamespace(text=html, raise_for_status=lambda: None)
+    monkeypatch.setattr(bc.requests, "get", lambda *args, **kwargs: response)
+    now = datetime(2026, 10, 13, 12, 0, tzinfo=bc.TZ)
+
+    events = bc.scrape_melhores_festas(now)
+
+    assert len(events) == 1
+    assert events[0].title == "Victor Lou na D-Edge"
+    assert events[0].event_date == date(2026, 10, 16)
+    assert (events[0].hour, events[0].minute) == (23, 0)
+    assert events[0].location == "D-Edge Rio, Rio de Janeiro"
+    assert events[0].source_url == bc.SECONDARY_SOURCE_URL
+    assert "melhoresfestasdorio.com.br" in events[0].ticket_url
+
+
+def test_same_event_recognizes_title_variants_between_sources():
+    primary = bc.Event(
+        "Victor Lou — D-EDGE Rio", date(2026, 10, 16), 23, 0,
+        "D-EDGE Rio, Rio de Janeiro-RJ",
+        "https://www.ingresse.com/d-edge-rio-apresenta-victor-lou/",
+    )
+    secondary = bc.Event(
+        "Victor Lou na D-Edge", date(2026, 10, 16), 23, 0,
+        "D-Edge Rio, Rio de Janeiro",
+        "https://melhoresfestasdorio.com.br/eletronico/#evento-victor-lou",
+        bc.SECONDARY_SOURCE_URL,
+    )
+
+    assert bc.same_event(primary, secondary)
+
+
+def test_merge_feed_preserves_existing_event_block_and_only_appends_new_items():
+    generated_at = datetime(2026, 10, 13, 12, 0, tzinfo=UTC)
+    primary = bc.Event(
+        "Victor Lou — D-EDGE Rio", date(2026, 10, 16), 23, 0,
+        "D-EDGE Rio, Rio de Janeiro-RJ",
+        "https://www.ingresse.com/d-edge-rio-apresenta-victor-lou/",
+    )
+    duplicate = bc.Event(
+        "Victor Lou na D-Edge", date(2026, 10, 16), 23, 0,
+        "D-Edge Rio, Rio de Janeiro",
+        "https://melhoresfestasdorio.com.br/eletronico/#evento-victor-lou",
+        bc.SECONDARY_SOURCE_URL,
+    )
+    new_event = bc.Event(
+        "D-Housers na D-Edge Club", date(2026, 10, 17), 23, 0,
+        "D-Edge Rio, Rio de Janeiro",
+        "https://melhoresfestasdorio.com.br/eletronico/#evento-d-housers",
+        bc.SECONDARY_SOURCE_URL,
+    )
+    existing = bc.build_ics([primary], generated_at=generated_at)
+    fresh = bc.build_ics([duplicate, new_event], generated_at=generated_at)
+
+    merged = bc.merge_feed_preserving_existing(
+        existing, fresh, now=datetime(2026, 10, 13, 12, 0, tzinfo=bc.TZ)
+    )
+
+    old_blocks = bc._vevent_blocks(existing)
+    merged_blocks = bc._vevent_blocks(merged)
+    assert merged_blocks[0] == old_blocks[0]
+    assert len(merged_blocks) == 2
+    parsed = Calendar.from_ical(merged)
+    summaries = [str(item.get("SUMMARY")) for item in parsed.walk("VEVENT")]
+    assert summaries.count("Victor Lou — D-EDGE Rio") == 1
+    assert summaries.count("D-Housers na D-Edge Club") == 1
