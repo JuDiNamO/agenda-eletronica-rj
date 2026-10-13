@@ -109,7 +109,7 @@ def normalized_event_title(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", ascii_title.lower()).strip()
 
 
-def same_event(left: "Event", right: "Event") -> bool:
+def same_event(left: Event, right: Event) -> bool:
     """Return True when two sources are describing the same event."""
     if left.event_date != right.event_date:
         return False
@@ -414,10 +414,14 @@ def scrape_melhores_festas(reference_time: datetime) -> list[Event]:
         for link in links:
             candidate_url = urljoin(SECONDARY_SOURCE_URL, str(link.get("href", "")).strip())
             host = (urlparse(candidate_url).hostname or "").lower()
-            if host and "melhoresfestasdorio.com.br" not in host and not any(domain in host for domain in social_domains):
-                if not host.endswith("agendaeletronica.com.br"):
-                    event_url = candidate_url
-                    break
+            if (
+                host
+                and "melhoresfestasdorio.com.br" not in host
+                and not any(domain in host for domain in social_domains)
+                and not host.endswith("agendaeletronica.com.br")
+            ):
+                event_url = candidate_url
+                break
         if not event_url:
             for link in links:
                 candidate_url = urljoin(SECONDARY_SOURCE_URL, str(link.get("href", "")).strip())
