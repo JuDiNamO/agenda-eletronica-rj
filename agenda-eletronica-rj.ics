@@ -577,4 +577,15 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/p
  osh/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/posh/
 END:VEVENT
+BEGIN:VEVENT
+UID:592b8a5c2c99ec2efe98a2c7@agendaeletronica-rj
+DTSTAMP:20261014T125525Z
+LAST-MODIFIED:20261014T125525Z
+DTSTART:20261229T000000Z
+SUMMARY:UNDR com Cat Dealers
+LOCATION:Marina da Glória\, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/u
+ ndr/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/undr/
+END:VEVENT
 END:VCALENDAR
