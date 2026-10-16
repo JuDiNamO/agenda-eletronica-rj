@@ -588,4 +588,15 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/u
  ndr/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/undr/
 END:VEVENT
+BEGIN:VEVENT
+UID:7783e1de99d2df4b9ea669b8@agendaeletronica-rj
+DTSTAMP:20261016T123009Z
+LAST-MODIFIED:20261016T123009Z
+DTSTART:20261101T020000Z
+SUMMARY:Balbúrdia Open Bar
+LOCATION:Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
+ uck/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/duck/
+END:VEVENT
 END:VCALENDAR
