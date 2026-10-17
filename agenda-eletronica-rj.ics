@@ -6,17 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:Agenda Eletrônica RJ — festas e ingressos
 X-WR-TIMEZONE:America/Sao_Paulo
 BEGIN:VEVENT
-UID:4f956c03489df9e104d064f4@agendaeletronica-rj
-DTSTAMP:20261012T164716Z
-LAST-MODIFIED:20261012T164716Z
-DTSTART:20261017T020000Z
-SUMMARY:Victor Lou — D-EDGE Rio
-LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-aprese
- nta-victor-lou/\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/d-edge-rio-apresenta-victor-lou/
-END:VEVENT
-BEGIN:VEVENT
 UID:1ba03cd62e85e5c0b73dd26b@agendaeletronica-rj
 DTSTAMP:20261012T164716Z
 LAST-MODIFIED:20261012T164716Z
