@@ -6,17 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:Agenda Eletrônica RJ — festas e ingressos
 X-WR-TIMEZONE:America/Sao_Paulo
 BEGIN:VEVENT
-UID:1ba03cd62e85e5c0b73dd26b@agendaeletronica-rj
-DTSTAMP:20261012T164716Z
-LAST-MODIFIED:20261012T164716Z
-DTSTART:20261018T020000Z
-SUMMARY:Fusca Clássicos com Jayboo — XCRUN Privilège Búzios
-LOCATION:Privilège Búzios\, Armação dos Búzios-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/fusca-no-privileg
- e-buzios-17-10/\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/fusca-no-privilege-buzios-17-10/
-END:VEVENT
-BEGIN:VEVENT
 UID:c3ccf576e98a3cc4aa83e234@agendaeletronica-rj
 DTSTAMP:20261012T164716Z
 LAST-MODIFIED:20261012T164716Z
@@ -50,18 +39,6 @@ LOCATION:Silk Beach Club\, Armação dos Búzios-RJ
 DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
  rora-2027/\nAgenda de origem: https://agendaeletronica.com.br/rj/
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
-END:VEVENT
-BEGIN:VEVENT
-UID:b7717debfecfcb6efdfd9855@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261018T020000Z
-SUMMARY:D-Housers na D-Edge Club
-LOCATION:D-Edge Rio\, Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- -housers/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico
- /
-URL:https://melhoresfestasdorio.com.br/evento/d-housers/
 END:VEVENT
 BEGIN:VEVENT
 UID:bf374cd9c1ee65d70f487c39@agendaeletronica-rj
