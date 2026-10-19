@@ -565,4 +565,38 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
  uck/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/duck/
 END:VEVENT
+BEGIN:VEVENT
+UID:236c755f95b669a5fdd717ab@agendaeletronica-rj
+DTSTAMP:20261019T144414Z
+LAST-MODIFIED:20261019T144414Z
+DTSTART:20261024T020000Z
+SUMMARY:Ratier & Friends
+LOCATION:D-Edge Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
+ atier-friends/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletr
+ onico/
+URL:https://melhoresfestasdorio.com.br/evento/ratier-friends/
+END:VEVENT
+BEGIN:VEVENT
+UID:b4f041c50bfcc71492a138cf@agendaeletronica-rj
+DTSTAMP:20261019T144414Z
+LAST-MODIFIED:20261019T144414Z
+DTSTART:20261031T020000Z
+SUMMARY:Heels of Love Eli Iwasa
+LOCATION:D-Edge Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/h
+ eels/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/heels/
+END:VEVENT
+BEGIN:VEVENT
+UID:ec64359ddbca1fa0faadadb1@agendaeletronica-rj
+DTSTAMP:20261019T144414Z
+LAST-MODIFIED:20261019T144414Z
+DTSTART:20261101T020000Z
+SUMMARY:Entropia na D-Edge
+LOCATION:D-Edge Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/e
+ ntropia/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/entropia/
+END:VEVENT
 END:VCALENDAR
