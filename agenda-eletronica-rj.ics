@@ -599,4 +599,16 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/e
  ntropia/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/entropia/
 END:VEVENT
+BEGIN:VEVENT
+UID:b751493ce5f978d0e13c4f71@agendaeletronica-rj
+DTSTAMP:20261022T130107Z
+LAST-MODIFIED:20261022T130107Z
+DTSTART:20261231T000000Z
+SUMMARY:Rave The World Alok
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
+ ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
+ eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
+END:VEVENT
 END:VCALENDAR
