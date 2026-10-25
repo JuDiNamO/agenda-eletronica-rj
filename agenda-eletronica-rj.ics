@@ -41,18 +41,6 @@ DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
 END:VEVENT
 BEGIN:VEVENT
-UID:bf374cd9c1ee65d70f487c39@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261025T000000Z
-SUMMARY:Festa do Pato com Laranja
-LOCATION:Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/p
- ato-com-laranja/\nAgenda de origem: https://melhoresfestasdorio.com.br/ele
- tronico/
-URL:https://melhoresfestasdorio.com.br/evento/pato-com-laranja/
-END:VEVENT
-BEGIN:VEVENT
 UID:6c44ff99d96721b2ae8b55b5@agendaeletronica-rj
 DTSTAMP:20261013T163222Z
 LAST-MODIFIED:20261013T163222Z
@@ -598,5 +586,240 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
  eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
+END:VEVENT
+BEGIN:VEVENT
+UID:c781d42a3fbb13c80b04757b@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261031T020000Z
+SUMMARY:D-EDGE Rio | Heel of Love by Eli Iwasa
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-aprese
+ nta-heel-of-love-by-eli-iwasa/\nAgenda de origem: https://agendaeletronica
+ .com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-apresenta-heel-of-love-by-eli-iwasa
+ /
+END:VEVENT
+BEGIN:VEVENT
+UID:f2d35eb26b30dde5dbe6e806@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261101T020000Z
+SUMMARY:Entropia 2 anos | KAF3R
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-aprese
+ nta-entropia/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-apresenta-entropia/
+END:VEVENT
+BEGIN:VEVENT
+UID:041be300c9fefa787cb83462@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261101T020000Z
+SUMMARY:Meeting Lab | Silk Búzios Silk Rooftop
+LOCATION:Armação dos Búzios-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/meetinglab-silkbu
+ zios/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/meetinglab-silkbuzios/
+END:VEVENT
+BEGIN:VEVENT
+UID:fdfb63275cf151697115b25b@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261101T020000Z
+SUMMARY:NOIR | Gabe no Privilège Búzios
+LOCATION:Privilège Búzios\, Armação dos Búzios-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/noir-com-gabe-no-
+ privilege-buzios/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/noir-com-gabe-no-privilege-buzios/
+END:VEVENT
+BEGIN:VEVENT
+UID:acb0b14bb786dac394f1d10d@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261107T020000Z
+SUMMARY:D-EDGE Rio 3 anos | Beltran
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
+ /\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-3-anos/
+END:VEVENT
+BEGIN:VEVENT
+UID:6af298cf5e4d067b8625c8c2@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261108T010000Z
+SUMMARY:Privilège Magic Edifício Touring
+LOCATION:Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/privilege-magic/\
+ nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/privilege-magic/
+END:VEVENT
+BEGIN:VEVENT
+UID:c5729a4a93ae1ce6016db1e3@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261108T020000Z
+SUMMARY:D-EDGE Rio 3 anos | DJ Marky & Friends
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
+ /\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-3-anos/
+END:VEVENT
+BEGIN:VEVENT
+UID:bf8bfa9baa533c445d5c5c65@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261114T020000Z
+SUMMARY:D-EDGE Rio | Tulipa & Trommel | Magda e tINI
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
+ /\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-3-anos/
+END:VEVENT
+BEGIN:VEVENT
+UID:fa1cc79fd1d3e0f8619544e6@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261115T020000Z
+SUMMARY:D-EDGE Rio 3 anos | D-Nox & Beckers
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
+ /\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-3-anos/
+END:VEVENT
+BEGIN:VEVENT
+UID:7d95bed128ae8fe238c98493@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261120T020000Z
+SUMMARY:D-EDGE Rio 3 anos | Ratier & Friends | Supernova
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
+ /\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-3-anos/
+END:VEVENT
+BEGIN:VEVENT
+UID:5262ff5f3d6cd506f82bc154@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261121T000000Z
+SUMMARY:Dawn Patrol | Maz e Antdot Jardins do Museu de Arte Moderna
+LOCATION:Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/dawn-patrol/\nAge
+ nda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/dawn-patrol/
+END:VEVENT
+BEGIN:VEVENT
+UID:1312d89d0d8a5fbe51d644ff@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261122T020000Z
+SUMMARY:D-EDGE Rio 3 anos | D.Cassete & Rewind | Kasino
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
+ /\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-3-anos/
+END:VEVENT
+BEGIN:VEVENT
+UID:eb8577f71d9427e32b16e4d9@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261122T020000Z
+SUMMARY:Hernan Cattaneo | Silk Búzios Silk Rooftop
+LOCATION:Armação dos Búzios-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/hernancattaneo-si
+ lkbuzios/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/hernancattaneo-silkbuzios/
+END:VEVENT
+BEGIN:VEVENT
+UID:254afce9f879f848fd24935c@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261128T020000Z
+SUMMARY:D-EDGE Rio 3 anos | D-Housers | Dam Swindle
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
+ /\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-3-anos/
+END:VEVENT
+BEGIN:VEVENT
+UID:adf20f84a23782807be7bc94@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261129T020000Z
+SUMMARY:D-EDGE Rio 3 anos | In Da Club | Gabe
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
+ /\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/d-edge-rio-3-anos/
+END:VEVENT
+BEGIN:VEVENT
+UID:e0345d9a14c452b573670346@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261213T020000Z
+SUMMARY:Tropicalle | Summer Opening | Silk Búzios Silk Rooftop
+LOCATION:Armação dos Búzios-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/tropicalle-summer
+ opening/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/tropicalle-summeropening/
+END:VEVENT
+BEGIN:VEVENT
+UID:d294251fa1c789a5ac647f73@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261220T000000Z
+SUMMARY:Love Sessions Festival 2026 Cidade do Amor
+LOCATION:Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.sympla.com.br/evento/love-sess
+ ions-festival-2026/3455081\nAgenda de origem: https://agendaeletronica.com
+ .br/rj/
+URL:https://www.sympla.com.br/evento/love-sessions-festival-2026/3455081
+END:VEVENT
+BEGIN:VEVENT
+UID:f758ea5e2ec4b2b298badf35@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261229T010000Z
+SUMMARY:UNDR Rio 2026 Marina da Glória
+LOCATION:Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://ingresse.com/undr-rio-2026/\nAgend
+ a de origem: https://agendaeletronica.com.br/rj/
+URL:https://ingresse.com/undr-rio-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:a0cb044107c509fdd06d6084@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20261231T230000Z
+SUMMARY:Réveillon Clubinho | Maz EXC Rio
+LOCATION:Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-clubinh
+ o-powered-by-privilege/\nAgenda de origem: https://agendaeletronica.com.br
+ /rj/
+URL:https://www.ingresse.com/reveillon-clubinho-powered-by-privilege/
+END:VEVENT
+BEGIN:VEVENT
+UID:d23121a8b1010ef0605907f2@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20270110T020000Z
+SUMMARY:Humanos | Silk Búzios Silk Rooftop
+LOCATION:Armação dos Búzios-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/humanos-silk-buzi
+ os/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/humanos-silk-buzios/
+END:VEVENT
+BEGIN:VEVENT
+UID:73d7af046270e4838e6c6407@agendaeletronica-rj
+DTSTAMP:20261025T123648Z
+LAST-MODIFIED:20261025T123648Z
+DTSTART:20270124T020000Z
+SUMMARY:Bloquinho da JOY | Rio de Janeiro The Home
+LOCATION:Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/bloquinho-da-joy-
+ rio-de-janeiro/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/bloquinho-da-joy-rio-de-janeiro/
 END:VEVENT
 END:VCALENDAR
