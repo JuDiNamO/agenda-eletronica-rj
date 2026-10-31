@@ -554,17 +554,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
 URL:https://melhoresfestasdorio.com.br/evento/duck/
 END:VEVENT
 BEGIN:VEVENT
-UID:b4f041c50bfcc71492a138cf@agendaeletronica-rj
-DTSTAMP:20261019T144414Z
-LAST-MODIFIED:20261019T144414Z
-DTSTART:20261031T020000Z
-SUMMARY:Heels of Love Eli Iwasa
-LOCATION:D-Edge Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/h
- eels/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
-URL:https://melhoresfestasdorio.com.br/evento/heels/
-END:VEVENT
-BEGIN:VEVENT
 UID:ec64359ddbca1fa0faadadb1@agendaeletronica-rj
 DTSTAMP:20261019T144414Z
 LAST-MODIFIED:20261019T144414Z
@@ -586,19 +575,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
  eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
-END:VEVENT
-BEGIN:VEVENT
-UID:c781d42a3fbb13c80b04757b@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261031T020000Z
-SUMMARY:D-EDGE Rio | Heel of Love by Eli Iwasa
-LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-aprese
- nta-heel-of-love-by-eli-iwasa/\nAgenda de origem: https://agendaeletronica
- .com.br/rj/
-URL:https://www.ingresse.com/d-edge-rio-apresenta-heel-of-love-by-eli-iwasa
- /
 END:VEVENT
 BEGIN:VEVENT
 UID:f2d35eb26b30dde5dbe6e806@agendaeletronica-rj
