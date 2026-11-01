@@ -6,19 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:Agenda Eletrônica RJ — festas e ingressos
 X-WR-TIMEZONE:America/Sao_Paulo
 BEGIN:VEVENT
-UID:c3ccf576e98a3cc4aa83e234@agendaeletronica-rj
-DTSTAMP:20261012T164716Z
-LAST-MODIFIED:20261012T164716Z
-DTSTART:20261101T010000Z
-SUMMARY:Real Distribuição | Magal e Mystery Friend
-LOCATION:Trauma\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://shotgun.live/pt-br/events/real-dis
- tribuicao-com-magal-e-mystery-friend\nAgenda de origem: https://agendaelet
- ronica.com.br/rj/
-URL:https://shotgun.live/pt-br/events/real-distribuicao-com-magal-e-mystery
- -friend
-END:VEVENT
-BEGIN:VEVENT
 UID:663f5bde7dbd0bf5b69c0f47@agendaeletronica-rj
 DTSTAMP:20261012T164716Z
 LAST-MODIFIED:20261012T164716Z
@@ -39,17 +26,6 @@ LOCATION:Silk Beach Club\, Armação dos Búzios-RJ
 DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
  rora-2027/\nAgenda de origem: https://agendaeletronica.com.br/rj/
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
-END:VEVENT
-BEGIN:VEVENT
-UID:6c44ff99d96721b2ae8b55b5@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261101T020000Z
-SUMMARY:Balbúrdia Open Bar Halloween
-LOCATION:Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- uck/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
-URL:https://melhoresfestasdorio.com.br/evento/duck/
 END:VEVENT
 BEGIN:VEVENT
 UID:913346b0151305f725453330@agendaeletronica-rj
@@ -543,28 +519,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/u
 URL:https://melhoresfestasdorio.com.br/evento/undr/
 END:VEVENT
 BEGIN:VEVENT
-UID:7783e1de99d2df4b9ea669b8@agendaeletronica-rj
-DTSTAMP:20261016T123009Z
-LAST-MODIFIED:20261016T123009Z
-DTSTART:20261101T020000Z
-SUMMARY:Balbúrdia Open Bar
-LOCATION:Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- uck/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
-URL:https://melhoresfestasdorio.com.br/evento/duck/
-END:VEVENT
-BEGIN:VEVENT
-UID:ec64359ddbca1fa0faadadb1@agendaeletronica-rj
-DTSTAMP:20261019T144414Z
-LAST-MODIFIED:20261019T144414Z
-DTSTART:20261101T020000Z
-SUMMARY:Entropia na D-Edge
-LOCATION:D-Edge Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/e
- ntropia/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
-URL:https://melhoresfestasdorio.com.br/evento/entropia/
-END:VEVENT
-BEGIN:VEVENT
 UID:b751493ce5f978d0e13c4f71@agendaeletronica-rj
 DTSTAMP:20261022T130107Z
 LAST-MODIFIED:20261022T130107Z
@@ -575,39 +529,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
  eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
-END:VEVENT
-BEGIN:VEVENT
-UID:f2d35eb26b30dde5dbe6e806@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261101T020000Z
-SUMMARY:Entropia 2 anos | KAF3R
-LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-aprese
- nta-entropia/\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/d-edge-rio-apresenta-entropia/
-END:VEVENT
-BEGIN:VEVENT
-UID:041be300c9fefa787cb83462@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261101T020000Z
-SUMMARY:Meeting Lab | Silk Búzios Silk Rooftop
-LOCATION:Armação dos Búzios-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/meetinglab-silkbu
- zios/\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/meetinglab-silkbuzios/
-END:VEVENT
-BEGIN:VEVENT
-UID:fdfb63275cf151697115b25b@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261101T020000Z
-SUMMARY:NOIR | Gabe no Privilège Búzios
-LOCATION:Privilège Búzios\, Armação dos Búzios-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/noir-com-gabe-no-
- privilege-buzios/\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/noir-com-gabe-no-privilege-buzios/
 END:VEVENT
 BEGIN:VEVENT
 UID:acb0b14bb786dac394f1d10d@agendaeletronica-rj
