@@ -695,4 +695,16 @@ DESCRIPTION:Compra de ingressos: https://www.ingresse.com/bloquinho-da-joy-
  rio-de-janeiro/\nAgenda de origem: https://agendaeletronica.com.br/rj/
 URL:https://www.ingresse.com/bloquinho-da-joy-rio-de-janeiro/
 END:VEVENT
+BEGIN:VEVENT
+UID:179ad7b97735730e4b838567@agendaeletronica-rj
+DTSTAMP:20261105T153349Z
+LAST-MODIFIED:20261105T153349Z
+DTSTART:20270109T190000Z
+SUMMARY:Vórtice Ruback
+LOCATION:Estrada do Joá 1410
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/v
+ ortice-ruback/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletr
+ onico/
+URL:https://melhoresfestasdorio.com.br/evento/vortice-ruback/
+END:VEVENT
 END:VCALENDAR
