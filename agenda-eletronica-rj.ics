@@ -28,17 +28,6 @@ DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
 END:VEVENT
 BEGIN:VEVENT
-UID:71387c438779b0513d34ebeb@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261107T020000Z
-SUMMARY:D-Edge 3 anos Beltran
-LOCATION:D-Edge Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/b
- eltran/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
-URL:https://melhoresfestasdorio.com.br/evento/beltran/
-END:VEVENT
-BEGIN:VEVENT
 UID:5bbb045232a9cfdb2fe02c3e@agendaeletronica-rj
 DTSTAMP:20261013T163222Z
 LAST-MODIFIED:20261013T163222Z
@@ -505,17 +494,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
  eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
-END:VEVENT
-BEGIN:VEVENT
-UID:acb0b14bb786dac394f1d10d@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261107T020000Z
-SUMMARY:D-EDGE Rio 3 anos | Beltran
-LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
- /\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/d-edge-rio-3-anos/
 END:VEVENT
 BEGIN:VEVENT
 UID:6af298cf5e4d067b8625c8c2@agendaeletronica-rj
