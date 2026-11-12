@@ -616,4 +616,16 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/v
  onico/
 URL:https://melhoresfestasdorio.com.br/evento/vortice-ruback/
 END:VEVENT
+BEGIN:VEVENT
+UID:b5d7fcecd235bc222f7d743e@agendaeletronica-rj
+DTSTAMP:20261112T160134Z
+LAST-MODIFIED:20261112T160134Z
+DTSTART:20270103T000000Z
+SUMMARY:Sol da Meia Noite Morro da Urca
+LOCATION:Morro da Urca
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/s
+ ol-da-meia-noite/\nAgenda de origem: https://melhoresfestasdorio.com.br/el
+ etronico/
+URL:https://melhoresfestasdorio.com.br/evento/sol-da-meia-noite/
+END:VEVENT
 END:VCALENDAR
