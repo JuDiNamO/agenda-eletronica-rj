@@ -28,18 +28,6 @@ DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
 END:VEVENT
 BEGIN:VEVENT
-UID:d3dbad3b43d83a100a72ddb6@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261114T020000Z
-SUMMARY:D-Edge 3 anos Tulipa & Tromel
-LOCATION:D-Edge Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- -edge-3-anos-2/\nAgenda de origem: https://melhoresfestasdorio.com.br/elet
- ronico/
-URL:https://melhoresfestasdorio.com.br/evento/d-edge-3-anos-2/
-END:VEVENT
-BEGIN:VEVENT
 UID:6208a819d526fdca017bbc27@agendaeletronica-rj
 DTSTAMP:20261013T163222Z
 LAST-MODIFIED:20261013T163222Z
@@ -449,17 +437,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
 END:VEVENT
 BEGIN:VEVENT
-UID:bf8bfa9baa533c445d5c5c65@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261114T020000Z
-SUMMARY:D-EDGE Rio | Tulipa & Trommel | Magda e tINI
-LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
- /\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/d-edge-rio-3-anos/
-END:VEVENT
-BEGIN:VEVENT
 UID:fa1cc79fd1d3e0f8619544e6@agendaeletronica-rj
 DTSTAMP:20261025T123648Z
 LAST-MODIFIED:20261025T123648Z
@@ -627,5 +604,143 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/s
  ol-da-meia-noite/\nAgenda de origem: https://melhoresfestasdorio.com.br/el
  etronico/
 URL:https://melhoresfestasdorio.com.br/evento/sol-da-meia-noite/
+END:VEVENT
+BEGIN:VEVENT
+UID:415e0d7861cd03a693a19c1d@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20261212T020000Z
+SUMMARY:Giu na D-Edge Rio
+LOCATION:D-Edge Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/g
+ iu/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/giu/
+END:VEVENT
+BEGIN:VEVENT
+UID:84ea2b5693a20ac75507a9b8@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20261213T000000Z
+SUMMARY:Festa do Pato com Laranja
+LOCATION:Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/p
+ ato-com-laranja/\nAgenda de origem: https://melhoresfestasdorio.com.br/ele
+ tronico/
+URL:https://melhoresfestasdorio.com.br/evento/pato-com-laranja/
+END:VEVENT
+BEGIN:VEVENT
+UID:22213ddf1bf0ce1e2b707ce9@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20261213T020000Z
+SUMMARY:Innersounds na D-Edge Rio
+LOCATION:D-Edge Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/i
+ nnersounds-2/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletro
+ nico/
+URL:https://melhoresfestasdorio.com.br/evento/innersounds-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:c889206dca97c34929dd8850@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20261230T180000Z
+SUMMARY:Templo Passaportes 30.12 a 28.02
+LOCATION:Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo-passaportes/\nAgenda de origem: https://melhoresfestasdorio.com.br/e
+ letronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo-passaportes/
+END:VEVENT
+BEGIN:VEVENT
+UID:b8160056765974a295ce28ab@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20261230T180000Z
+SUMMARY:Templo | Mita Gami + Rafael
+LOCATION:Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo/
+END:VEVENT
+BEGIN:VEVENT
+UID:8414b82d39c7675e75275a1e@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20270101T130000Z
+SUMMARY:Templo | 1• Wellness Forest Club
+LOCATION:Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo-2/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:450a6cbdf6fd76128e219f73@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20270102T180000Z
+SUMMARY:Templo | Kasablanca + Franc Fala
+LOCATION:Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo-3/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo-3/
+END:VEVENT
+BEGIN:VEVENT
+UID:7fdc80c915ddf755c5b782b2@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20270103T130000Z
+SUMMARY:Templo | 2• Wellness Day Forest Club
+LOCATION:Estrada Das Furnas próximo ao 2711\, Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo-4/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo-4/
+END:VEVENT
+BEGIN:VEVENT
+UID:e7edb4deefab0c47792512c9@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20270109T180000Z
+SUMMARY:Templo | Bob Moses
+LOCATION:Estrada Das Furnas próximo ao 2711\, Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo-bobmoses/\nAgenda de origem: https://melhoresfestasdorio.com.br/elet
+ ronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo-bobmoses/
+END:VEVENT
+BEGIN:VEVENT
+UID:11a3ac1d852f6972ae906a55@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20270110T130000Z
+SUMMARY:Templo | 3• Wellness Florest Club
+LOCATION:Estrada Das Furnas próximo ao 2711\, Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo-3-wellness-florest-club/\nAgenda de origem: https://melhoresfestasdo
+ rio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo-3-wellness-florest-clu
+ b/
+END:VEVENT
+BEGIN:VEVENT
+UID:715309fce0f7ae01f991dd01@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20270123T180000Z
+SUMMARY:Templo | Hernan Cattaneo
+LOCATION:Estrada Das Furnas próximo ao 2711\, Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo-5/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo-5/
+END:VEVENT
+BEGIN:VEVENT
+UID:8dbf17abd9470e8d9fed7419@agendaeletronica-rj
+DTSTAMP:20261114T141426Z
+LAST-MODIFIED:20261114T141426Z
+DTSTART:20270207T180000Z
+SUMMARY:Templo | Carnaval – Armin Van Buuren
+LOCATION:Estrada Das Furnas próximo ao 2711\, Itanhangá \, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ emplo-6/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/templo-6/
 END:VEVENT
 END:VCALENDAR
