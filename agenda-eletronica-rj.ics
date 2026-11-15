@@ -28,29 +28,6 @@ DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
 END:VEVENT
 BEGIN:VEVENT
-UID:6208a819d526fdca017bbc27@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261115T010000Z
-SUMMARY:Simo All Night Long
-LOCATION:Joá\, Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/s
- imo-2/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
-URL:https://melhoresfestasdorio.com.br/evento/simo-2/
-END:VEVENT
-BEGIN:VEVENT
-UID:2e3ffc39ce1f62ec877ba265@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261115T020000Z
-SUMMARY:D-Edge 3 anos D-Nox & Beckers
-LOCATION:D-Edge Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- -edge-3-anos-3/\nAgenda de origem: https://melhoresfestasdorio.com.br/elet
- ronico/
-URL:https://melhoresfestasdorio.com.br/evento/d-edge-3-anos-3/
-END:VEVENT
-BEGIN:VEVENT
 UID:f60bbc18cbfc650dde7d64f4@agendaeletronica-rj
 DTSTAMP:20261013T163222Z
 LAST-MODIFIED:20261013T163222Z
@@ -435,17 +412,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
  eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
-END:VEVENT
-BEGIN:VEVENT
-UID:fa1cc79fd1d3e0f8619544e6@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261115T020000Z
-SUMMARY:D-EDGE Rio 3 anos | D-Nox & Beckers
-LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
- /\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/d-edge-rio-3-anos/
 END:VEVENT
 BEGIN:VEVENT
 UID:7d95bed128ae8fe238c98493@agendaeletronica-rj
