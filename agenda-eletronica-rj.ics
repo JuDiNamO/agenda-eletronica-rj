@@ -709,4 +709,87 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
  emplo-6/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/templo-6/
 END:VEVENT
+BEGIN:VEVENT
+UID:6aecde51144c20ee2569ee52@agendaeletronica-rj
+DTSTAMP:20261116T170705Z
+LAST-MODIFIED:20261116T170705Z
+DTSTART:20270206T010000Z
+SUMMARY:Boma Luciano &The Martinez Brothers
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/b
+ oma-6/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/boma-6/
+END:VEVENT
+BEGIN:VEVENT
+UID:0991100161d1e6e0b881c9bf@agendaeletronica-rj
+DTSTAMP:20261116T170705Z
+LAST-MODIFIED:20261116T170705Z
+DTSTART:20270207T010000Z
+SUMMARY:Boma Peggy Gou & Chris Stassy
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/b
+ oma-sabado/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletroni
+ co/
+URL:https://melhoresfestasdorio.com.br/evento/boma-sabado/
+END:VEVENT
+BEGIN:VEVENT
+UID:cb36cb343d33b687a2d98ec2@agendaeletronica-rj
+DTSTAMP:20261116T170705Z
+LAST-MODIFIED:20261116T170705Z
+DTSTART:20270208T010000Z
+SUMMARY:Boma Adriatique & Ben Sterling
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/b
+ oma-domingo/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletron
+ ico/
+URL:https://melhoresfestasdorio.com.br/evento/boma-domingo/
+END:VEVENT
+BEGIN:VEVENT
+UID:4bd10fcb22ea6600adfea809@agendaeletronica-rj
+DTSTAMP:20261116T170705Z
+LAST-MODIFIED:20261116T170705Z
+DTSTART:20270209T010000Z
+SUMMARY:Boma Michael Bibi & Dennis Cruz
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/b
+ oma-segunda/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletron
+ ico/
+URL:https://melhoresfestasdorio.com.br/evento/boma-segunda/
+END:VEVENT
+BEGIN:VEVENT
+UID:8de7cf29795e387128b50f43@agendaeletronica-rj
+DTSTAMP:20261116T170705Z
+LAST-MODIFIED:20261116T170705Z
+DTSTART:20270210T010000Z
+SUMMARY:Boma Fisher & Mochakk
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/b
+ oma-terca/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronic
+ o/
+URL:https://melhoresfestasdorio.com.br/evento/boma-terca/
+END:VEVENT
+BEGIN:VEVENT
+UID:ddc1104bebd3145b9e59eedf@agendaeletronica-rj
+DTSTAMP:20261116T170705Z
+LAST-MODIFIED:20261116T170705Z
+DTSTART:20270213T010000Z
+SUMMARY:Boma Vintage Culture
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/b
+ oma-vintage-culture/\nAgenda de origem: https://melhoresfestasdorio.com.br
+ /eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/boma-vintage-culture/
+END:VEVENT
+BEGIN:VEVENT
+UID:4359f6a9db7cb354ffd1eb39@agendaeletronica-rj
+DTSTAMP:20261116T170705Z
+LAST-MODIFIED:20261116T170705Z
+DTSTART:20270214T020000Z
+SUMMARY:Boma Dawn Patrol Maz & Antdot
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
+ awn-patrol/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletroni
+ co/
+URL:https://melhoresfestasdorio.com.br/evento/dawn-patrol/
+END:VEVENT
 END:VCALENDAR
