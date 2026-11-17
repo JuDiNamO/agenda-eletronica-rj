@@ -792,4 +792,28 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
  co/
 URL:https://melhoresfestasdorio.com.br/evento/dawn-patrol/
 END:VEVENT
+BEGIN:VEVENT
+UID:782750b3049b78826286b6d0@agendaeletronica-rj
+DTSTAMP:20261117T165548Z
+LAST-MODIFIED:20261117T165548Z
+DTSTART:20261229T010000Z
+SUMMARY:Sky Sunrise no Morro da Urca
+LOCATION:Morro da Urca
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/s
+ ky-sunrise/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletroni
+ co/
+URL:https://melhoresfestasdorio.com.br/evento/sky-sunrise/
+END:VEVENT
+BEGIN:VEVENT
+UID:0a3fa64b2b1f0f917a81e510@agendaeletronica-rj
+DTSTAMP:20261117T165548Z
+LAST-MODIFIED:20261117T165548Z
+DTSTART:20261231T010000Z
+SUMMARY:Transcend no Morro da Urca
+LOCATION:Morro da Urca
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
+ ranscend/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico
+ /
+URL:https://melhoresfestasdorio.com.br/evento/transcend/
+END:VEVENT
 END:VCALENDAR
