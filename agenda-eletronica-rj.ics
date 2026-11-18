@@ -816,4 +816,16 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/t
  /
 URL:https://melhoresfestasdorio.com.br/evento/transcend/
 END:VEVENT
+BEGIN:VEVENT
+UID:15967aa25a20297c745ae2f4@agendaeletronica-rj
+DTSTAMP:20261118T163016Z
+LAST-MODIFIED:20261118T163016Z
+DTSTART:20270101T220000Z
+SUMMARY:Festa Raro Museu do Amanhã
+LOCATION:Museu do Amanhã
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/f
+ esta-raro/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronic
+ o/
+URL:https://melhoresfestasdorio.com.br/evento/festa-raro/
+END:VEVENT
 END:VCALENDAR
