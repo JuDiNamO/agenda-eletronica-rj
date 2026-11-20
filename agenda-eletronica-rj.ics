@@ -28,18 +28,6 @@ DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
 END:VEVENT
 BEGIN:VEVENT
-UID:f60bbc18cbfc650dde7d64f4@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261120T020000Z
-SUMMARY:D-Edge 3 anos Ratier & Friends
-LOCATION:D-Edge Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- -edge-3-anos-4/\nAgenda de origem: https://melhoresfestasdorio.com.br/elet
- ronico/
-URL:https://melhoresfestasdorio.com.br/evento/d-edge-3-anos-4/
-END:VEVENT
-BEGIN:VEVENT
 UID:5203cd99bf741711246255d5@agendaeletronica-rj
 DTSTAMP:20261013T163222Z
 LAST-MODIFIED:20261013T163222Z
@@ -412,17 +400,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
  eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
-END:VEVENT
-BEGIN:VEVENT
-UID:7d95bed128ae8fe238c98493@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261120T020000Z
-SUMMARY:D-EDGE Rio 3 anos | Ratier & Friends | Supernova
-LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
- /\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/d-edge-rio-3-anos/
 END:VEVENT
 BEGIN:VEVENT
 UID:5262ff5f3d6cd506f82bc154@agendaeletronica-rj
