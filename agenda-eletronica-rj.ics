@@ -28,41 +28,6 @@ DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
 END:VEVENT
 BEGIN:VEVENT
-UID:5203cd99bf741711246255d5@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261121T010000Z
-SUMMARY:Colosseo :: Morro da Urca
-LOCATION:Morro da Urca
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/c
- olosseo/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
-URL:https://melhoresfestasdorio.com.br/evento/colosseo/
-END:VEVENT
-BEGIN:VEVENT
-UID:ac8b9805c057340c8d73e466@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261121T020000Z
-SUMMARY:D-Edge 3 anos Red Night
-LOCATION:D-Edge Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- -edge-3-anos-5/\nAgenda de origem: https://melhoresfestasdorio.com.br/elet
- ronico/
-URL:https://melhoresfestasdorio.com.br/evento/d-edge-3-anos-5/
-END:VEVENT
-BEGIN:VEVENT
-UID:148a85477a4b0f4667dff783@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261121T020000Z
-SUMMARY:Dawn Patrol Maz & Antdot
-LOCATION:Jardim do Mam\, Museu de Arte Moderna
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- awn-patrol-2/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletro
- nico/
-URL:https://melhoresfestasdorio.com.br/evento/dawn-patrol-2/
-END:VEVENT
-BEGIN:VEVENT
 UID:181d5cacac2439af6fbf4b84@agendaeletronica-rj
 DTSTAMP:20261013T163222Z
 LAST-MODIFIED:20261013T163222Z
@@ -400,17 +365,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
  eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
-END:VEVENT
-BEGIN:VEVENT
-UID:5262ff5f3d6cd506f82bc154@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261121T000000Z
-SUMMARY:Dawn Patrol | Maz e Antdot Jardins do Museu de Arte Moderna
-LOCATION:Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/dawn-patrol/\nAge
- nda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/dawn-patrol/
 END:VEVENT
 BEGIN:VEVENT
 UID:1312d89d0d8a5fbe51d644ff@agendaeletronica-rj
