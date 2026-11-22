@@ -28,18 +28,6 @@ DESCRIPTION:Compra de ingressos: https://www.ingresse.com/reveillon-silk-au
 URL:https://www.ingresse.com/reveillon-silk-aurora-2027/
 END:VEVENT
 BEGIN:VEVENT
-UID:181d5cacac2439af6fbf4b84@agendaeletronica-rj
-DTSTAMP:20261013T163222Z
-LAST-MODIFIED:20261013T163222Z
-DTSTART:20261122T020000Z
-SUMMARY:D-Edge 3 anos D.Cassete & Rewind
-LOCATION:D-Edge Rio de Janeiro
-DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/d
- -edge-3-anos-6/\nAgenda de origem: https://melhoresfestasdorio.com.br/elet
- ronico/
-URL:https://melhoresfestasdorio.com.br/evento/d-edge-3-anos-6/
-END:VEVENT
-BEGIN:VEVENT
 UID:e3dab288c219cc970d91fcc7@agendaeletronica-rj
 DTSTAMP:20261013T163222Z
 LAST-MODIFIED:20261013T163222Z
@@ -365,28 +353,6 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ave-the-world-alok/\nAgenda de origem: https://melhoresfestasdorio.com.br/
  eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rave-the-world-alok/
-END:VEVENT
-BEGIN:VEVENT
-UID:1312d89d0d8a5fbe51d644ff@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261122T020000Z
-SUMMARY:D-EDGE Rio 3 anos | D.Cassete & Rewind | Kasino
-LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-3-anos
- /\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/d-edge-rio-3-anos/
-END:VEVENT
-BEGIN:VEVENT
-UID:eb8577f71d9427e32b16e4d9@agendaeletronica-rj
-DTSTAMP:20261025T123648Z
-LAST-MODIFIED:20261025T123648Z
-DTSTART:20261122T020000Z
-SUMMARY:Hernan Cattaneo | Silk Búzios Silk Rooftop
-LOCATION:Armação dos Búzios-RJ
-DESCRIPTION:Compra de ingressos: https://www.ingresse.com/hernancattaneo-si
- lkbuzios/\nAgenda de origem: https://agendaeletronica.com.br/rj/
-URL:https://www.ingresse.com/hernancattaneo-silkbuzios/
 END:VEVENT
 BEGIN:VEVENT
 UID:254afce9f879f848fd24935c@agendaeletronica-rj
