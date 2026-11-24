@@ -725,4 +725,15 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/f
  o/
 URL:https://melhoresfestasdorio.com.br/evento/festa-raro/
 END:VEVENT
+BEGIN:VEVENT
+UID:ab0e4f0714e7eb7d3324a90d@agendaeletronica-rj
+DTSTAMP:20261124T185628Z
+LAST-MODIFIED:20261124T185628Z
+DTSTART:20261228T010000Z
+SUMMARY:Rara Alto Verão no Morro da Urca
+LOCATION:Morro da Urca
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
+ ara/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
+URL:https://melhoresfestasdorio.com.br/evento/rara/
+END:VEVENT
 END:VCALENDAR
