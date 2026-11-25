@@ -736,4 +736,28 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/r
  ara/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico/
 URL:https://melhoresfestasdorio.com.br/evento/rara/
 END:VEVENT
+BEGIN:VEVENT
+UID:37f15e9d80035c0b25a32aba@agendaeletronica-rj
+DTSTAMP:20261125T180015Z
+LAST-MODIFIED:20261125T180015Z
+DTSTART:20261205T020000Z
+SUMMARY:Cat Dealers na D-Edge Rio
+LOCATION:D-Edge\, Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/c
+ at-dealer/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronic
+ o/
+URL:https://melhoresfestasdorio.com.br/evento/cat-dealer/
+END:VEVENT
+BEGIN:VEVENT
+UID:25a91a15d473aa804cde76d8@agendaeletronica-rj
+DTSTAMP:20261125T180015Z
+LAST-MODIFIED:20261125T180015Z
+DTSTART:20270209T190000Z
+SUMMARY:CarnaRara 2027
+LOCATION:Centro do Rio de Janeiro
+DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/c
+ arnarara/\nAgenda de origem: https://melhoresfestasdorio.com.br/eletronico
+ /
+URL:https://melhoresfestasdorio.com.br/evento/carnarara/
+END:VEVENT
 END:VCALENDAR
