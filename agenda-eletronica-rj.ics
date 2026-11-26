@@ -760,4 +760,100 @@ DESCRIPTION:Mais informações: https://melhoresfestasdorio.com.br/evento/c
  /
 URL:https://melhoresfestasdorio.com.br/evento/carnarara/
 END:VEVENT
+BEGIN:VEVENT
+UID:6ad01bb58c0de26ce12feb1f@agendaeletronica-rj
+DTSTAMP:20261126T174555Z
+LAST-MODIFIED:20261126T174555Z
+DTSTART:20261212T020000Z
+SUMMARY:D-EDGE Rio | GIU Sounds Cool
+LOCATION:D-EDGE Rio\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/d-edge-rio-aprese
+ nta-giu-sounds-cool/\nAgenda de origem: https://agendaeletronica.com.br/rj
+ /
+URL:https://www.ingresse.com/d-edge-rio-apresenta-giu-sounds-cool/
+END:VEVENT
+BEGIN:VEVENT
+UID:61f80ecd5b995642300256c6@agendaeletronica-rj
+DTSTAMP:20261126T174555Z
+LAST-MODIFIED:20261126T174555Z
+DTSTART:20270206T010000Z
+SUMMARY:BOMA CarnaRio | Luciano\, The Martinez Brothers e Blond:ish
+LOCATION:Museu do Amanhã\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/boma-presents-luc
+ iano-the-martinez-brothers-blond-ish/\nAgenda de origem: https://agendaele
+ tronica.com.br/rj/
+URL:https://www.ingresse.com/boma-presents-luciano-the-martinez-brothers-bl
+ ond-ish/
+END:VEVENT
+BEGIN:VEVENT
+UID:eec262a3e72c8f5706ea2be1@agendaeletronica-rj
+DTSTAMP:20261126T174555Z
+LAST-MODIFIED:20261126T174555Z
+DTSTART:20270207T010000Z
+SUMMARY:BOMA CarnaRio | Peggy Gou e Chris Stussy
+LOCATION:Museu do Amanhã\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/boma-presents-peg
+ gy-gou-chris-stassy/\nAgenda de origem: https://agendaeletronica.com.br/rj
+ /
+URL:https://www.ingresse.com/boma-presents-peggy-gou-chris-stassy/
+END:VEVENT
+BEGIN:VEVENT
+UID:5b41b118c397ab13495912dd@agendaeletronica-rj
+DTSTAMP:20261126T174555Z
+LAST-MODIFIED:20261126T174555Z
+DTSTART:20270207T170000Z
+SUMMARY:BOMA CarnaRio | Adriatique e Ben Sterling
+LOCATION:Museu do Amanhã\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/boma-presents-adr
+ iatique-ben-sterling/\nAgenda de origem: https://agendaeletronica.com.br/r
+ j/
+URL:https://www.ingresse.com/boma-presents-adriatique-ben-sterling/
+END:VEVENT
+BEGIN:VEVENT
+UID:50c2e46d36d11fd37bfad839@agendaeletronica-rj
+DTSTAMP:20261126T174555Z
+LAST-MODIFIED:20261126T174555Z
+DTSTART:20270209T010000Z
+SUMMARY:BOMA CarnaRio | Michael Bibi\, Dennis Cruz e Mau P
+LOCATION:Museu do Amanhã\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/boma-presents-mic
+ hael-bibi-dennis-cruz-mau-p/\nAgenda de origem: https://agendaeletronica.c
+ om.br/rj/
+URL:https://www.ingresse.com/boma-presents-michael-bibi-dennis-cruz-mau-p/
+END:VEVENT
+BEGIN:VEVENT
+UID:d48ce4210420517d0dd4a64b@agendaeletronica-rj
+DTSTAMP:20261126T174555Z
+LAST-MODIFIED:20261126T174555Z
+DTSTART:20270210T000000Z
+SUMMARY:BOMA CarnaRio | Fisher e Mochakk
+LOCATION:Museu do Amanhã\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/boma-presents-fis
+ her-mochakk/\nAgenda de origem: https://agendaeletronica.com.br/rj/
+URL:https://www.ingresse.com/boma-presents-fisher-mochakk/
+END:VEVENT
+BEGIN:VEVENT
+UID:cf06af54234a16e23fba483d@agendaeletronica-rj
+DTSTAMP:20261126T174555Z
+LAST-MODIFIED:20261126T174555Z
+DTSTART:20270213T010000Z
+SUMMARY:BOMA CarnaRio | Vintage Culture e Franky Rizardo
+LOCATION:Museu do Amanhã\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/boma-presents-vin
+ tage-culture-frank-rizzardo/\nAgenda de origem: https://agendaeletronica.c
+ om.br/rj/
+URL:https://www.ingresse.com/boma-presents-vintage-culture-frank-rizzardo/
+END:VEVENT
+BEGIN:VEVENT
+UID:fada014260a803aa97591ab8@agendaeletronica-rj
+DTSTAMP:20261126T174555Z
+LAST-MODIFIED:20261126T174555Z
+DTSTART:20270214T000000Z
+SUMMARY:BOMA CarnaRio | Dawn Patrol\, Maz e Antdot
+LOCATION:Museu do Amanhã\, Rio de Janeiro-RJ
+DESCRIPTION:Compra de ingressos: https://www.ingresse.com/boma-presents-daw
+ n-patrol-w-maz-antdot/\nAgenda de origem: https://agendaeletronica.com.br/
+ rj/
+URL:https://www.ingresse.com/boma-presents-dawn-patrol-w-maz-antdot/
+END:VEVENT
 END:VCALENDAR
